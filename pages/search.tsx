@@ -1,8 +1,9 @@
 // pages/cart.tsx
 
 import {
-  Layout, ProductCollection
+  Layout
 } from "@/components";
+import ProductCollection from "@/components/ProductCollection";
 
 import { useRouter } from 'next/router';
 

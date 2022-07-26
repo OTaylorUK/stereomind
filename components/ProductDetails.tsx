@@ -21,10 +21,10 @@ const styles = {
 
 import {
   ProductDetail,
-  ProductCollection
 } from '@/components';
 
 import Loader from './Loader';
+import ProductCollection from "./ProductCollection";
 
 
 interface Props {

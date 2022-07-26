@@ -16,13 +16,11 @@ export interface ProductCollectionProps {
 }
 
 
-export const ProductCollection = ({
-  categoryID,
+const ProductCollection = ({ categoryID,
   search = "",
   setCounter,
   allowMore = true,
-  perPage = 8,
-}: ProductCollectionProps) => {
+  perPage = 8}:ProductCollectionProps): JSX.Element => {
   
   
   const [productsFilter, setProductsFilter] = useState<ProductFilterInput>({
@@ -108,5 +106,10 @@ export const ProductCollection = ({
     );
   }
 
-  return null;
+  return (
+    <div>...</div>
+  );
 };
+
+
+export default ProductCollection
