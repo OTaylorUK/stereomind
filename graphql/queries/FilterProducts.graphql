@@ -1,0 +1,39 @@
+query ProductCollection($first: Int = 20, $after: String, $filter: ProductFilterInput) {
+  products(first: $first, channel: "default-channel", after: $after, filter: $filter) {
+    edges {
+      node {
+        id
+        name
+        description
+
+        thumbnail {
+          url
+        }
+        category {
+          name
+        }
+        pricing {
+          priceRange {
+            start {
+              gross {
+                amount
+              }
+            }
+            stop {
+              gross {
+                amount
+              }
+            }
+          }
+        }
+      }
+    }
+    pageInfo {
+      hasNextPage
+      hasPreviousPage
+      startCursor
+      endCursor
+    }
+    totalCount
+  }
+}

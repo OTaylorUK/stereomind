@@ -1,0 +1,10 @@
+query FetchAllCategories($num: Int = 5) {
+  categories(first: $num, level: 0) {
+    edges {
+      node {
+        id
+        name
+      }
+    }
+  }
+}
